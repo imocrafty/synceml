@@ -31,11 +31,9 @@ Since it's a desktop app, tell the user how to run it.
 2. Install dependencies (e.g., `npm install` or `pip install -r requirements.txt`).
 3. Run the executable or script.
 
-
-
-## 5. OAuth Verification Status
-
-This is a helpful "pro-tip" for reviewers.
-
 > **Note to Reviewers:** This application is currently in the verification process. The Privacy Policy can be found at [https://imocrafty.github.io/synceml/privacy.html](https://www.google.com/search?q=https://imocrafty.github.io/synceml/privacy.html).
 
+ 
+
+
+ 
