@@ -1,13 +1,41 @@
-The **SyncEML** is a desktop-based email archiving tool designed to help users create local, searchable backups of their personal Gmail data.
+## 1. Project Title & Description
 
-We are requesting the gmail.readonly scope specifically to:
+Start with a clear heading and a 2-3 sentence summary of what the app does.
 
-**List Messages**: Identify the available emails and labels in the user's account to allow for selective archiving.
+> **SyncEML**
+> A desktop application designed to synchronize and archive Gmail messages locally in `.eml` format for offline analysis and secure storage.
 
-**Download Headers**: Extract metadata (Subject, Date, Sender) to build a local index for fast searching.
+## 2. Key Features
 
-**Download Raw Content**: Retrieve the full email body and attachments to store them in a local JSON/HTML format on the user's hardware.
+List the functions you mentioned in your OAuth justification. This helps reviewers confirm the app's "Limited Use."
 
-A narrower scope (such as metadata only) would not work because the primary function of the app is to archive the full content of the emails for offline access. 
-The app does not require 'Write' or 'Modify' access, hence we have selected the most restrictive scope that allows for full content reading. 
-All data retrieved is stored locally on the user's device and is not transmitted to any external servers."
+* **Gmail Integration:** Connects securely to your Google account using `gmail.readonly`.
+* **Local Archiving:** Downloads raw email content directly to your machine.
+* **Header Analysis:** Views subject lines, dates, and senders without needing an active internet connection.
+
+## 3. Privacy & Data Handling (Crucial for Verification)
+
+Because you are using a Restricted Scope, you should explicitly state your data flow here.
+
+* **No Server-Side Storage:** This app is a client-side tool. Your email data is never uploaded to our servers.
+* **Encryption:** Mention if you encrypt the local `.eml` files or the local database.
+* **Limited Use:** Include a small note: *"This app's use of information received from Google APIs adheres to the Google API Service User Data Policy."*
+
+## 4. Installation & Setup
+
+Since it's a desktop app, tell the user how to run it.
+
+* **Prerequisites:** (e.g., Python 3.10+, Node.js, or a specific OS).
+* **Setup:**
+1. Clone the repo.
+2. Install dependencies (e.g., `npm install` or `pip install -r requirements.txt`).
+3. Run the executable or script.
+
+
+
+## 5. OAuth Verification Status
+
+This is a helpful "pro-tip" for reviewers.
+
+> **Note to Reviewers:** This application is currently in the verification process. The Privacy Policy can be found at [https://imocrafty.github.io/synceml/privacy.html](https://www.google.com/search?q=https://imocrafty.github.io/synceml/privacy.html).
+
